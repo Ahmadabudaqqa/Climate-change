@@ -22,25 +22,21 @@ From 1901 to 2016, Pakistan has undergone periodic fluctuations in annual rainfa
 
 🤖 **NEW**: Arduino-based obstacle avoidance robot with encoder support for improved movement stability.
 
-### About the Robot Project
-Located in the `/robot_with_encoders/` directory, this project provides:
-- Complete Arduino code for obstacle-avoidance robot
-- HC-020K encoder integration for wheel stabilization
-- Closed-loop control system for precise movement
-- **80-90% improvement** in straight-line accuracy
+### Code Location
+- **Main Code**: [robot_with_encoders/robot_with_encoders.ino](robot_with_encoders/robot_with_encoders.ino)
 
-### Quick Links
-- 🚀 **Quick Start**: [robot_with_encoders/QUICKSTART.md](robot_with_encoders/QUICKSTART.md)
-- 📖 **Full Documentation**: [robot_with_encoders/INDEX.md](robot_with_encoders/INDEX.md)
-- 🔌 **Wiring Guide**: [robot_with_encoders/WIRING.md](robot_with_encoders/WIRING.md)
-- 💻 **Main Code**: [robot_with_encoders/robot_with_encoders.ino](robot_with_encoders/robot_with_encoders.ino)
+### Wiring (Quick Reference)
+```
+Left Encoder:  VCC→5V, GND→GND, OUT→Pin 2
+Right Encoder: VCC→5V, GND→GND, OUT→Pin 3
+L298N: Same as your original robot
+IR Sensor: A0 (same as original)
+```
 
 ### Features
-- IR-based obstacle detection and avoidance
-- Encoder-based speed stabilization
-- Automatic drift correction
-- Non-blocking state machine design
-- Complete documentation and wiring diagrams
+- IR obstacle detection and avoidance
+- Encoder-based speed stabilization for straight movement
+- 80-90% better straight-line accuracy
 
 ---
 
